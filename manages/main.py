@@ -8,7 +8,7 @@ from manages import run, func
 from threading import Thread
 from queue import Queue
 import setting as set
-from spider_tools.Sliding_verification import CrackSlider
+from tools.Sliding_verification import CrackSlider
 
 #主函数
 class MySpider:
