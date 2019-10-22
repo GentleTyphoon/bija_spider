@@ -1,7 +1,6 @@
 import pika,sys
 
 def fa(mes):
-    # __author__ = 'STEVEN'
     # 开启socket
     connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
     channel = connection.channel()
@@ -11,7 +10,6 @@ def fa(mes):
     connection.close()  # 关闭连接
 
 def shou():
-    # __author__ = 'STEVEN'
     # 建立socket
     connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
     channel = connection.channel()
