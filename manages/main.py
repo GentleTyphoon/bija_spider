@@ -1,14 +1,9 @@
 import requests
-import aiohttp
-import asyncio
-import os
-import json
-import random
-from manages import run, func
-from threading import Thread
-from queue import Queue
 import setting as set
 from tools.Sliding_verification import CrackSlider
+from queue import Queue
+from threading import Thread
+import asyncio
 
 #主函数
 class MySpider:

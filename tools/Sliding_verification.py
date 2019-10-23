@@ -1,3 +1,4 @@
+#Pillow
 from PIL import Image, ImageEnhance
 from selenium import webdriver
 from selenium.webdriver import ActionChains
