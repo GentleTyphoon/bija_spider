@@ -21,7 +21,6 @@ class CrackSlider():
     """
 
     def __init__(self):
-
         # 实际地址
         self.url = 'https://buff.163.com/account/login?back_url=/user-center/asset/%3F'
         self.driver = webdriver.Chrome()
@@ -41,7 +40,6 @@ class CrackSlider():
         template_img = Image.open(BytesIO(requests.get(template_link).content))
         target_img.save('target.jpg')
         template_img.save('template.png')
-        size_orign = target.size
         local_img = Image.open('target.jpg')
         size_loc = local_img.size
         self.zoom = 320 / int(size_loc[0])
@@ -138,12 +136,11 @@ class CrackSlider():
             print(failure)
         except:
             print('验证成功')
-            time.sleep(1)
             self.driver.find_element_by_id("submitBtn").click()
-            time.sleep(1)
             cookies = self.driver.get_cookies()
             cookies = "; ".join([i["name"] + '=' + i["value"] for i in cookies]) + "; "
             print(cookies)
+            self.driver.quit()
             return cookies
 
         if failure:

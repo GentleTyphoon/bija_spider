@@ -1,5 +1,6 @@
 import requests
 from tools.Sliding_verification import CrackSlider
+from tools.rabbits_MQ import fa
 import random
 import json
 import time
@@ -14,12 +15,17 @@ headerslist = [
     'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/13.0.782.41 Safari/535.1 QQBrowser/6.9.11079.201'
 ]
 
-
+c = CrackSlider()
+cook = c.crack_slider()
+headers = {
+    'Cookie': cook,
+    'User-Agent': random.choice(headerslist),
+}
 for i in range(1,880):
-    headers = {
-
-        'User-Agent':random.choice(headerslist),
-    }
     t = int(time.time() * 1000)
-    url = 'https://buff.163.com/market/?game=dota2#tab=selling&page_num=%d&_=%d' % (i,t)
+    url = 'https://buff.163.com/api/market/goods?game=dota2&page_num=%d&_=%d' % (i,t)
     res = requests.get(url,headers=headers)
+    j = res.text
+    if j:
+        fa(res.text)
+    print('!')
