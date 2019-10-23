@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spiders/my_buff.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/my_buff.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/Sliding_verification.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/Sliding_verification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/rabbits_MQ.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/rabbits_MQ.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +198,7 @@
       <workItem from="1571574820522" duration="6827000" />
       <workItem from="1571665610522" duration="1357000" />
       <workItem from="1571753735654" duration="5822000" />
-      <workItem from="1571838373900" duration="6855000" />
+      <workItem from="1571838373900" duration="7419000" />
     </task>
     <task id="LOCAL-00001" summary="'rabbitMQ'">
       <created>1571760034089</created>
@@ -229,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571843018910</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="'rabbitMQ'">
+      <created>1571845357711</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571845357711</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +264,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/spiders/my_buff.py</url>
-          <line>30</line>
+          <line>35</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>

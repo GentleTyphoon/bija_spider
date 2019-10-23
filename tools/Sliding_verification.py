@@ -12,7 +12,7 @@ import numpy as np
 from io import BytesIO
 import time
 import requests
-
+import random
 
 
 class CrackSlider():
@@ -26,6 +26,14 @@ class CrackSlider():
         self.driver = webdriver.Chrome()
         self.wait = WebDriverWait(self.driver, 20)
         self.zoom = 1
+        self.zhanghao=random.choice['18866674071',
+                                    '18866674052',
+                                    '18866478984',
+                                    '17061315807',
+                                    '17061315804',
+                                    '17061315803',
+                                    '17061315802',
+                                    ]
 
     def open(self):
         self.driver.get(self.url)
@@ -106,9 +114,9 @@ class CrackSlider():
         time.sleep(0.5)
         self.driver.find_element_by_class_name("tab0").click()
         time.sleep(0.5)
-        self.driver.find_element_by_id("phoneipt").send_keys("17671434829")
+        self.driver.find_element_by_id("phoneipt").send_keys(self.zhanghao)
         time.sleep(0.5)
-        self.driver.find_element_by_xpath("//input[@autocomplete='new-password']").send_keys("1996.fsw")
+        self.driver.find_element_by_xpath("//input[@autocomplete='new-password']").send_keys("abcd.123")
         target = 'target.jpg'
         template = 'template.png'
         self.get_pic()
